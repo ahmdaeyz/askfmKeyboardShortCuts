@@ -2,13 +2,12 @@
 // @name         askfmKeyboardShortCuts
 // @namespace    ahmdaeyz
 // @version      0.1
-// @description  control the site using the keyboard
+// @description  Navigate ask.fm using the keyboard
 // @author       ahmdaeyz
 // @match        https://ask.fm/account/wall
 // @match        https://ask.fm/*
-// @homepageURL  https://github.com/ahmdaeyz
+// @homepageURL  https://github.com/ahmdaeyz/askfmKeyboardShortCuts
 // @license      MIT
-// @copyright    2019, ahmdaeyz (https://openuserjs.org/users/ahmdaeyz)
 // @grant none
 // @noframes
 // ==/UserScript==
