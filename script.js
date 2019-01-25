@@ -7,6 +7,7 @@
 // @match        https://ask.fm/account/wall
 // @match       https://ask.fm/*
 // @icon        https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
+// @@homepageURL 	https://github.com/ahmdaeyz
 // @grant GM_addStyle
 // @grant GM_deleteValue
 // @grant GM_getResourceText
