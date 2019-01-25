@@ -16,9 +16,6 @@
 // @grant GM_setValue
 // ==/UserScript==
 
-(function() {
-    'use strict';
-
 // stores computed style of the active tab be it WALL or DISCOVER
 var style = getComputedStyle(document.querySelector("#topMenu > div.rsp-lte-tablet.rsp-container > section > a"));
 // stores the color of the acc in RGB
@@ -105,5 +102,3 @@ document.addEventListener("keypress",function(e){
     }
 
 });
-
-})();
