@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         askfmKeyboard
+// @name         askfmKeyboardShortCuts
 // @namespace    https://github.com/ahmdaeyz
 // @version      0.1
 // @description  control the site using the keyboard
@@ -19,9 +19,9 @@
 (function() {
     'use strict';
 
-//stores computed style of the active tab be it WALL or DISCOVER
+// stores computed style of the active tab be it WALL or DISCOVER
 var style = getComputedStyle(document.querySelector("#topMenu > div.rsp-lte-tablet.rsp-container > section > a"));
-//stores the color of the acc in RGB
+// stores the color of the acc in RGB
 var colorInRGB = style.borderBottomColor;
 //getting rid of "(",")","rgb" and then spliting the string to a 3 elements array.
 var colors = (colorInRGB.replace("(","")).replace(")","").replace("rgb","").split(", ");
