@@ -10,13 +10,7 @@
 // @homepageURL 	https://github.com/ahmdaeyz
 // @license         MIT
 // @copyright     2019, ahmdaeyz (https://openuserjs.org/users/ahmdaeyz)
-// @grant GM_addStyle
-// @grant GM_deleteValue
-// @grant GM_getResourceText
-// @grant GM_getResourceURL
-// @grant GM_getValue
-// @grant GM_listValues
-// @grant GM_setValue
+// @grant none
 // @noframes
 // ==/UserScript==
 
