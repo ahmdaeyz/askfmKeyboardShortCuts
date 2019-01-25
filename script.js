@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         askfmKeyboardShortCuts
+// @name         askfmKeyboard
 // @namespace    https://github.com/ahmdaeyz
 // @version      0.1
-// @description  navigate ask.fm using only the keyboard
+// @description  control the site using the keyboard
 // @author       ahmdaeyz
 // @match        https://ask.fm/account/wall
 // @match       https://ask.fm/*
@@ -11,6 +11,7 @@
 
 (function() {
     'use strict';
+
 //stores computed style of the active tab be it WALL or DISCOVER
 var style = getComputedStyle(document.querySelector("#topMenu > div.rsp-lte-tablet.rsp-container > section > a"));
 //stores the color of the acc in RGB
@@ -18,7 +19,7 @@ var colorInRGB = style.borderBottomColor;
 //getting rid of "(",")","rgb" and then spliting the string to a 3 elements array.
 var colors = (colorInRGB.replace("(","")).replace(")","").replace("rgb","").split(", ");
 
-var rgbToHex = function (rgb) { 
+var rgbToHex = function (rgb) {
   //decimal to hexadecimal conversion
   var hex = Number(rgb).toString(16);
   if (hex.length < 2) {
@@ -39,7 +40,7 @@ var colorHEX = fullColorHex(colors);
 var cursorAt =0;
 var answers= document.getElementsByClassName("streamItem-answer");
 document.addEventListener("keypress",function(e){
-	if(e.keyCode==50){		
+	if(e.keyCode==50){
         //sets the border of the older answer/non-active to normal.
         answers[cursorAt].style.borderTop="8px solid #f2f2f9";
         if(document.querySelector(".item-page-next")!=null){
@@ -55,7 +56,7 @@ document.addEventListener("keypress",function(e){
         //  press number "2" to navigate to the next answer.
         answers[++cursorAt].scrollIntoView(false);
         //highlight the border of the active/current answer (same color as the user's prefered color).
-		answers[cursorAt].style.borderTop="8px solid #"+colorHEX;	
+		answers[cursorAt].style.borderTop="8px solid #"+colorHEX;
 	}else if(e.keyCode==51){
         //sets the border of the older answer/non-active to normal.
         answers[cursorAt].style.borderTop="8px solid #f2f2f9";
@@ -78,13 +79,13 @@ document.addEventListener("keypress",function(e){
 		var event = document.createEvent("MouseEvents");
             event.initMouseEvent("click", true, true, window,
                 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            var done = answers[cursorAt].querySelector(".icon-like").dispatchEvent(event);	
+            var done = answers[cursorAt].querySelector(".icon-like").dispatchEvent(event);
 	}else if(e.keyCode==53){
         // press number "5" to keep asking the user of the current answer.
 		var event = document.createEvent("MouseEvents");
             event.initMouseEvent("click", true, true, window,
                 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            answers[cursorAt].querySelector(".icon-send").dispatchEvent(event);	
+            answers[cursorAt].querySelector(".icon-send").dispatchEvent(event);
     }else if(e.keyCode==54){
         //press number "6" to read the whole answer whenever there is a readMore.
         if(answers[cursorAt].querySelector(".readMore")!=null){
@@ -92,10 +93,10 @@ document.addEventListener("keypress",function(e){
             var event = document.createEvent("MouseEvents");
             event.initMouseEvent("click", true, true, window,
                 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            readmore.dispatchEvent(event);	
+            readmore.dispatchEvent(event);
         }
     }
-    
+
 });
 
 })();
