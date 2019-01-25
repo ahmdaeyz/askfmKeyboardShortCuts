@@ -5,11 +5,11 @@
 // @description  control the site using the keyboard
 // @author       ahmdaeyz
 // @match        https://ask.fm/account/wall
-// @match       https://ask.fm/*
-// @icon        https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
-// @homepageURL 	https://github.com/ahmdaeyz
-// @license         MIT
-// @copyright     2019, ahmdaeyz (https://openuserjs.org/users/ahmdaeyz)
+// @match        https://ask.fm/*
+// @icon         https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
+// @homepageURL  https://github.com/ahmdaeyz
+// @license      MIT
+// @copyright    2019, ahmdaeyz (https://openuserjs.org/users/ahmdaeyz)
 // @grant none
 // @noframes
 // ==/UserScript==
