@@ -6,6 +6,7 @@
 // @author       ahmdaeyz
 // @match        https://ask.fm/account/wall
 // @match       https://ask.fm/*
+// @icon        https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
 // @grant        none
 // ==/UserScript==
 
