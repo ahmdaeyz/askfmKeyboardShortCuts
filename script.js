@@ -16,6 +16,7 @@
 // @grant GM_getValue
 // @grant GM_listValues
 // @grant GM_setValue
+// @noframes
 // ==/UserScript==
 
 // stores computed style of the active tab be it WALL or DISCOVER
