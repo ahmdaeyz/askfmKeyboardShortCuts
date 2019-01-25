@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         askfmKeyboardShortCuts
-// @namespace    https://github.com/ahmdaeyz
+// @namespace    ahmdaeyz
 // @version      0.1
 // @description  control the site using the keyboard
 // @author       ahmdaeyz
 // @match        https://ask.fm/account/wall
 // @match       https://ask.fm/*
 // @icon        https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
-// @@homepageURL 	https://github.com/ahmdaeyz
+// @homepageURL 	https://github.com/ahmdaeyz
+// @license         MIT
 // @grant GM_addStyle
 // @grant GM_deleteValue
 // @grant GM_getResourceText
