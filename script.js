@@ -9,6 +9,7 @@
 // @icon        https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
 // @homepageURL 	https://github.com/ahmdaeyz
 // @license         MIT
+// @copyright     2019, ahmdaeyz (https://openuserjs.org/users/ahmdaeyz)
 // @grant GM_addStyle
 // @grant GM_deleteValue
 // @grant GM_getResourceText
