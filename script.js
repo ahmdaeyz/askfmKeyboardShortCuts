@@ -7,7 +7,13 @@
 // @match        https://ask.fm/account/wall
 // @match       https://ask.fm/*
 // @icon        https://github.com/ahmdaeyz/askfmKeyboardShortCuts/blob/master/icon.png
-// @grant        none
+// @grant GM_addStyle
+// @grant GM_deleteValue
+// @grant GM_getResourceText
+// @grant GM_getResourceURL
+// @grant GM_getValue
+// @grant GM_listValues
+// @grant GM_setValue
 // ==/UserScript==
 
 (function() {
